@@ -43,13 +43,18 @@ namespace ControlDeClientes
             if (control.editarFicha(fichaEditada))
             {
                 MessageBox.Show("Datos correctamente editados!");
+                Control control = new Control();
+                control.Show();
                 this.Close();
+                
             }
         }
 
         private void picDiscard_Click(object sender, EventArgs e)
         {
             MessageBox.Show("No se edito nada!");
+            Control control = new Control();
+            control.Show();
             this.Close();
         }
     }

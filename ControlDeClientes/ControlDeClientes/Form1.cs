@@ -62,8 +62,19 @@ namespace ControlDeClientes
             
         }
 
+        public void vaciarDataGrid()
+        {
+            int count = dtDatos.Rows.Count;
+            for (int j = count; j > 0; j--)
+            {
+                dtDatos.Rows.Remove(dtDatos.Rows[j-1]);
+            }
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            vaciarDataGrid();
+            picEditar.Visible = false;
             List<String> lista = control.buscarDatos(txtBusqueda.Text);
             for (int i = 0; i < lista.Count; i++)
             {
@@ -74,6 +85,10 @@ namespace ControlDeClientes
             if (lista.Count == 0)
             {
                 MessageBox.Show("Ningun dato coincide con el criterio de busqueda!");
+            }
+            else
+            {
+                MessageBox.Show("Busqueda finalizada, hay "+lista.Count+" coincidencias para "+txtBusqueda.Text);
             }
         }
 
@@ -95,6 +110,7 @@ namespace ControlDeClientes
             Ficha ficha = new Ficha(dtDatos.SelectedCells[0].Value.ToString(), dtDatos.SelectedCells[1].Value.ToString(), dtDatos.SelectedCells[2].Value.ToString(), dtDatos.SelectedCells[3].Value.ToString(), dtDatos.SelectedCells[4].Value.ToString(), dtDatos.SelectedCells[5].Value.ToString(), dtDatos.SelectedCells[6].Value.ToString(), dtDatos.SelectedCells[7].Value.ToString(), dtDatos.SelectedCells[8].Value.ToString(), dtDatos.SelectedCells[9].Value.ToString());
             Edicion edicion = new Edicion();
             edicion.Show();
+            this.Visible = false;
             edicion.editarFicha(ficha);
         }
     }
