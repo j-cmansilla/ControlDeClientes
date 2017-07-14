@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ControlDeClientes
 {
-    class ControlDeFichas
+    public class ControlDeFichas
     {
         private const String ruta = @"C:/DataBase/";
         private const String nombreArchivo = "db.csv";
@@ -27,8 +27,34 @@ namespace ControlDeClientes
         public String[] agregarFichas(Ficha ficha)
         {
             String[] datos = new String[1];
-            datos[0] = ficha.nombre + "," + ficha.telefono1 + "," + ficha.telefono2 + "," + ficha.telefono3 + "," + ficha.direccion + "," + ficha.anotaciones + "," + ficha.observaciones + "," + ficha.fechas + "," + ficha.deuda;
+            datos[0] = ficha.nombre + "," + ficha.telefono1 + "," + ficha.telefono2 + "," + ficha.telefono3 + "," + ficha.direccion + "," + ficha.anotaciones + "," + ficha.observaciones + "," + ficha.fechas + "," + ficha.deuda+","+ficha.ID.ToString();
             return datos;
+        }
+
+        public String[] retornarDatos()
+        {
+            String[] datosDeVuelta = File.ReadAllLines(ruta + nombreArchivo);
+            return datosDeVuelta;
+        }
+
+        public bool editarFicha(Ficha ficha)
+        {
+            String[] datos = retornarDatos();
+            String[] datosEditados = new String[datos.Length];
+            for (int i = 0; i < datos.Length; i++)
+            {
+                String[] data = datos[i].Split(',');
+                if (data[9] == ficha.ID)
+                {
+                    datosEditados[i] = agregarFichas(ficha)[0];
+                }
+                else
+                {
+                    datosEditados[i] = datos[i];
+                }
+            }
+            File.WriteAllLines(ruta + nombreArchivo, datosEditados);
+            return true;
         }
 
         public List<String> buscarDatos(String criterioDeBusqueda) {
