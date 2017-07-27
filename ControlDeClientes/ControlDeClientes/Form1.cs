@@ -113,5 +113,15 @@ namespace ControlDeClientes
             this.Visible = false;
             edicion.editarFicha(ficha);
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFechas_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

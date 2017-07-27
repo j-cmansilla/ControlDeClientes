@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edicion));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.picDiscard = new System.Windows.Forms.PictureBox();
+            this.picSave = new System.Windows.Forms.PictureBox();
             this.txtFechas = new System.Windows.Forms.TextBox();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.txtDeuda = new System.Windows.Forms.TextBox();
@@ -48,12 +51,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.picSave = new System.Windows.Forms.PictureBox();
-            this.picDiscard = new System.Windows.Forms.PictureBox();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDiscard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSave)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -87,168 +87,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Editar Fichas";
             // 
-            // txtFechas
+            // txtID
             // 
-            this.txtFechas.Location = new System.Drawing.Point(228, 108);
-            this.txtFechas.Name = "txtFechas";
-            this.txtFechas.Size = new System.Drawing.Size(740, 20);
-            this.txtFechas.TabIndex = 57;
-            // 
-            // txtObservaciones
-            // 
-            this.txtObservaciones.Location = new System.Drawing.Point(228, 49);
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(740, 20);
-            this.txtObservaciones.TabIndex = 56;
-            // 
-            // txtDeuda
-            // 
-            this.txtDeuda.Location = new System.Drawing.Point(41, 388);
-            this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(133, 20);
-            this.txtDeuda.TabIndex = 54;
-            // 
-            // txtAnotaciones
-            // 
-            this.txtAnotaciones.Location = new System.Drawing.Point(228, 168);
-            this.txtAnotaciones.Name = "txtAnotaciones";
-            this.txtAnotaciones.Size = new System.Drawing.Size(740, 20);
-            this.txtAnotaciones.TabIndex = 58;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(41, 313);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(133, 20);
-            this.txtDireccion.TabIndex = 53;
-            // 
-            // txtTel3
-            // 
-            this.txtTel3.Location = new System.Drawing.Point(41, 244);
-            this.txtTel3.Name = "txtTel3";
-            this.txtTel3.Size = new System.Drawing.Size(133, 20);
-            this.txtTel3.TabIndex = 52;
-            // 
-            // txtTel2
-            // 
-            this.txtTel2.Location = new System.Drawing.Point(41, 178);
-            this.txtTel2.Name = "txtTel2";
-            this.txtTel2.Size = new System.Drawing.Size(133, 20);
-            this.txtTel2.TabIndex = 51;
-            // 
-            // txtTel1
-            // 
-            this.txtTel1.Location = new System.Drawing.Point(41, 108);
-            this.txtTel1.Name = "txtTel1";
-            this.txtTel1.Size = new System.Drawing.Size(133, 20);
-            this.txtTel1.TabIndex = 50;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(41, 49);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(133, 20);
-            this.txtNombre.TabIndex = 49;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(60, 350);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 23);
-            this.label10.TabIndex = 48;
-            this.label10.Text = "Deuda:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(231, 82);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 23);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "Fechas:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(231, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 23);
-            this.label8.TabIndex = 46;
-            this.label8.Text = "Observaciones:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(231, 142);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(116, 23);
-            this.label7.TabIndex = 45;
-            this.label7.Text = "Anotaciones:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(62, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 23);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "Direccion:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(72, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 23);
-            this.label5.TabIndex = 43;
-            this.label5.Text = "Tel. 3:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(72, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 23);
-            this.label4.TabIndex = 42;
-            this.label4.Text = "Tel. 2:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(72, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 23);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "Tel. 1:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(62, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 23);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Nombre:";
-            // 
-            // picSave
-            // 
-            this.picSave.Image = ((System.Drawing.Image)(resources.GetObject("picSave.Image")));
-            this.picSave.Location = new System.Drawing.Point(803, 346);
-            this.picSave.Name = "picSave";
-            this.picSave.Size = new System.Drawing.Size(97, 102);
-            this.picSave.TabIndex = 58;
-            this.picSave.TabStop = false;
-            this.picSave.Click += new System.EventHandler(this.picSave_Click);
+            this.txtID.Location = new System.Drawing.Point(697, 428);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 20);
+            this.txtID.TabIndex = 60;
+            this.txtID.Visible = false;
             // 
             // picDiscard
             // 
@@ -260,13 +105,168 @@
             this.picDiscard.TabStop = false;
             this.picDiscard.Click += new System.EventHandler(this.picDiscard_Click);
             // 
-            // txtID
+            // picSave
             // 
-            this.txtID.Location = new System.Drawing.Point(228, 211);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 60;
-            this.txtID.Visible = false;
+            this.picSave.Image = ((System.Drawing.Image)(resources.GetObject("picSave.Image")));
+            this.picSave.Location = new System.Drawing.Point(803, 346);
+            this.picSave.Name = "picSave";
+            this.picSave.Size = new System.Drawing.Size(97, 102);
+            this.picSave.TabIndex = 58;
+            this.picSave.TabStop = false;
+            this.picSave.Click += new System.EventHandler(this.picSave_Click);
+            // 
+            // txtFechas
+            // 
+            this.txtFechas.Location = new System.Drawing.Point(10, 205);
+            this.txtFechas.Name = "txtFechas";
+            this.txtFechas.Size = new System.Drawing.Size(996, 20);
+            this.txtFechas.TabIndex = 57;
+            // 
+            // txtObservaciones
+            // 
+            this.txtObservaciones.Location = new System.Drawing.Point(10, 333);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(776, 20);
+            this.txtObservaciones.TabIndex = 56;
+            // 
+            // txtDeuda
+            // 
+            this.txtDeuda.Location = new System.Drawing.Point(10, 265);
+            this.txtDeuda.Name = "txtDeuda";
+            this.txtDeuda.Size = new System.Drawing.Size(996, 20);
+            this.txtDeuda.TabIndex = 54;
+            // 
+            // txtAnotaciones
+            // 
+            this.txtAnotaciones.Location = new System.Drawing.Point(10, 381);
+            this.txtAnotaciones.Name = "txtAnotaciones";
+            this.txtAnotaciones.Size = new System.Drawing.Size(776, 20);
+            this.txtAnotaciones.TabIndex = 58;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(10, 90);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(562, 20);
+            this.txtDireccion.TabIndex = 53;
+            // 
+            // txtTel3
+            // 
+            this.txtTel3.Location = new System.Drawing.Point(327, 139);
+            this.txtTel3.Name = "txtTel3";
+            this.txtTel3.Size = new System.Drawing.Size(133, 20);
+            this.txtTel3.TabIndex = 52;
+            // 
+            // txtTel2
+            // 
+            this.txtTel2.Location = new System.Drawing.Point(173, 139);
+            this.txtTel2.Name = "txtTel2";
+            this.txtTel2.Size = new System.Drawing.Size(133, 20);
+            this.txtTel2.TabIndex = 51;
+            // 
+            // txtTel1
+            // 
+            this.txtTel1.Location = new System.Drawing.Point(6, 139);
+            this.txtTel1.Name = "txtTel1";
+            this.txtTel1.Size = new System.Drawing.Size(133, 20);
+            this.txtTel1.TabIndex = 50;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(10, 41);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(562, 20);
+            this.txtNombre.TabIndex = 49;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 228);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(66, 23);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Deuda:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 176);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 23);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "Fechas:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 307);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(134, 23);
+            this.label8.TabIndex = 46;
+            this.label8.Text = "Observaciones:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 355);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(116, 23);
+            this.label7.TabIndex = 45;
+            this.label7.Text = "Anotaciones:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 23);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Direccion:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(323, 113);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 23);
+            this.label5.TabIndex = 43;
+            this.label5.Text = "Tel. 3:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(169, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 23);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Tel. 2:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 113);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 23);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Tel. 1:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 15);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 23);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Nombre:";
             // 
             // Edicion
             // 
@@ -281,8 +281,8 @@
             this.Load += new System.EventHandler(this.Edicion_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDiscard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSave)).EndInit();
             this.ResumeLayout(false);
 
         }

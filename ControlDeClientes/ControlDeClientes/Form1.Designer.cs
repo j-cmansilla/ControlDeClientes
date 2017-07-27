@@ -62,10 +62,10 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ControlDeUsuarios.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureAdd)).BeginInit();
@@ -117,56 +117,57 @@
             // 
             // txtFechas
             // 
-            this.txtFechas.Location = new System.Drawing.Point(291, 124);
+            this.txtFechas.Location = new System.Drawing.Point(11, 224);
             this.txtFechas.Name = "txtFechas";
-            this.txtFechas.Size = new System.Drawing.Size(740, 20);
+            this.txtFechas.Size = new System.Drawing.Size(1043, 20);
             this.txtFechas.TabIndex = 21;
+            this.txtFechas.TextChanged += new System.EventHandler(this.txtFechas_TextChanged);
             // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(291, 51);
+            this.txtObservaciones.Location = new System.Drawing.Point(294, 339);
             this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(740, 20);
+            this.txtObservaciones.Size = new System.Drawing.Size(650, 20);
             this.txtObservaciones.TabIndex = 20;
             // 
             // txtDeuda
             // 
-            this.txtDeuda.Location = new System.Drawing.Point(10, 368);
+            this.txtDeuda.Location = new System.Drawing.Point(11, 273);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(133, 20);
+            this.txtDeuda.Size = new System.Drawing.Size(1043, 20);
             this.txtDeuda.TabIndex = 16;
             // 
             // txtAnotaciones
             // 
-            this.txtAnotaciones.Location = new System.Drawing.Point(291, 209);
+            this.txtAnotaciones.Location = new System.Drawing.Point(291, 403);
             this.txtAnotaciones.Name = "txtAnotaciones";
-            this.txtAnotaciones.Size = new System.Drawing.Size(740, 20);
+            this.txtAnotaciones.Size = new System.Drawing.Size(653, 20);
             this.txtAnotaciones.TabIndex = 22;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(10, 293);
+            this.txtDireccion.Location = new System.Drawing.Point(10, 98);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(133, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(677, 20);
             this.txtDireccion.TabIndex = 15;
             // 
             // txtTel3
             // 
-            this.txtTel3.Location = new System.Drawing.Point(10, 224);
+            this.txtTel3.Location = new System.Drawing.Point(324, 146);
             this.txtTel3.Name = "txtTel3";
             this.txtTel3.Size = new System.Drawing.Size(133, 20);
             this.txtTel3.TabIndex = 14;
             // 
             // txtTel2
             // 
-            this.txtTel2.Location = new System.Drawing.Point(10, 158);
+            this.txtTel2.Location = new System.Drawing.Point(164, 146);
             this.txtTel2.Name = "txtTel2";
             this.txtTel2.Size = new System.Drawing.Size(133, 20);
             this.txtTel2.TabIndex = 13;
             // 
             // txtTel1
             // 
-            this.txtTel1.Location = new System.Drawing.Point(10, 88);
+            this.txtTel1.Location = new System.Drawing.Point(11, 146);
             this.txtTel1.Name = "txtTel1";
             this.txtTel1.Size = new System.Drawing.Size(133, 20);
             this.txtTel1.TabIndex = 12;
@@ -175,14 +176,14 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(10, 29);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(133, 20);
+            this.txtNombre.Size = new System.Drawing.Size(677, 20);
             this.txtNombre.TabIndex = 11;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 330);
+            this.label10.Location = new System.Drawing.Point(7, 247);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(66, 23);
             this.label10.TabIndex = 10;
@@ -192,17 +193,18 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(287, 88);
+            this.label9.Location = new System.Drawing.Point(7, 186);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 23);
             this.label9.TabIndex = 9;
             this.label9.Text = "Fechas:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(284, 26);
+            this.label8.Location = new System.Drawing.Point(154, 339);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(134, 23);
             this.label8.TabIndex = 8;
@@ -212,7 +214,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(287, 170);
+            this.label7.Location = new System.Drawing.Point(169, 399);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 23);
             this.label7.TabIndex = 7;
@@ -222,7 +224,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(31, 258);
+            this.label6.Location = new System.Drawing.Point(23, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 23);
             this.label6.TabIndex = 6;
@@ -232,7 +234,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 187);
+            this.label5.Location = new System.Drawing.Point(320, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 23);
             this.label5.TabIndex = 5;
@@ -242,7 +244,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(41, 122);
+            this.label4.Location = new System.Drawing.Point(174, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 23);
             this.label4.TabIndex = 4;
@@ -252,7 +254,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 63);
+            this.label3.Location = new System.Drawing.Point(42, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 23);
             this.label3.TabIndex = 3;
@@ -400,6 +402,13 @@
             this.Column9.ReadOnly = true;
             this.Column9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "ID";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            this.Column10.Visible = false;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
@@ -414,7 +423,7 @@
             // 
             this.txtBusqueda.Location = new System.Drawing.Point(10, 44);
             this.txtBusqueda.Name = "txtBusqueda";
-            this.txtBusqueda.Size = new System.Drawing.Size(133, 20);
+            this.txtBusqueda.Size = new System.Drawing.Size(506, 20);
             this.txtBusqueda.TabIndex = 13;
             // 
             // label1
@@ -426,13 +435,6 @@
             this.label1.Size = new System.Drawing.Size(69, 23);
             this.label1.TabIndex = 12;
             this.label1.Text = "Buscar:";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "ID";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Visible = false;
             // 
             // Control
             // 
